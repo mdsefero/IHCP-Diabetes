@@ -1,0 +1,145 @@
+
+T1DM results:
+N:  46024
+Contingency_table:
+ IHCP                No   Yes
+Type I diabetes             
+No               44413  1361
+Yes                246     4
+
+CT as %:
+ IHCP                No    Yes
+Type I diabetes              
+No               99.45  99.71
+Yes               0.55   0.29
+Chi-squared statistic: 1.19
+P-value: 0.276
+
+T2DM results:
+N:  46024
+Contingency_table:
+ IHCP                 No   Yes
+Type II diabetes             
+No                43678  1318
+Yes                 981    47
+
+CT as %:
+ IHCP                No    Yes
+Type II diabetes             
+No                97.8  96.56
+Yes                2.2   3.44
+Chi-squared statistic: 8.86
+P-value: 0.003
+
+GDM results:
+N:  45960
+Contingency_table:
+ IHCP                     No   Yes
+Gestational diabetes             
+no                    40563  1183
+yes                    4033   181
+
+CT as %:
+ IHCP                     No    Yes
+Gestational diabetes              
+no                    90.96  86.73
+yes                    9.04  13.27
+Chi-squared statistic: 27.88
+P-value: 0.0
+
+Uncontroled diabetes results:
+N:  46136
+Contingency_table:
+ IHCP                      No   Yes
+Uncontrolled diabetes             
+no                     44249  1356
+yes                      519    12
+
+CT as %:
+ IHCP                      No    Yes
+Uncontrolled diabetes              
+no                     98.84  99.12
+yes                     1.16   0.88
+Chi-squared statistic: 0.7
+P-value: 0.404
+
+Metformin results:
+N:  46213
+Contingency_table:
+ IHCP          No   Yes
+Metformin             
+no         44002  1334
+yes          841    36
+
+CT as %:
+ IHCP          No    Yes
+Metformin              
+no         98.12  97.37
+yes         1.88   2.63
+Chi-squared statistic: 3.65
+P-value: 0.056
+
+
+
+Starting Logit Regression for Odds Ratios
+Optimization terminated successfully.
+         Current function value: 0.133260
+         Iterations 8
+Odds Ratios:
+const                    0.0291
+Type I diabetes          0.4987
+Type II diabetes         1.4446
+Gestational diabetes     1.5406
+Uncontrolled diabetes    0.5338
+Metformin                1.1356
+dtype: float64
+
+ p-values:
+const                    0.000000e+00
+Type I diabetes          1.689545e-01
+Type II diabetes         2.248224e-02
+Gestational diabetes     3.463691e-07
+Uncontrolled diabetes    3.637340e-02
+Metformin                4.886930e-01
+dtype: float64
+
+ Confidence Intervals:
+                            0       1
+const                  0.0274  0.0308
+Type I diabetes        0.1850  1.3439
+Type II diabetes       1.0533  1.9814
+Gestational diabetes   1.3047  1.8192
+Uncontrolled diabetes  0.2965  0.9610
+Metformin              0.7924  1.6274
+
+GDM results:
+N:  4214
+Contingency_table:
+ IHCP         no  yes
+Metformin           
+no         3718  161
+yes         315   20
+
+CT as %:
+ IHCP          no    yes
+Metformin              
+no         92.19  88.95
+yes         7.81  11.05
+Chi-squared statistic: 2.06
+P-value: 0.151
+
+T2DM results:
+N:  307
+Contingency_table:
+ IHCP        no  yes
+Metformin          
+no         247   13
+yes         43    4
+
+CT as %:
+ IHCP          no    yes
+Metformin              
+no         85.17  76.47
+yes        14.83  23.53
+Chi-squared statistic: 0.39
+P-value: 0.534
